@@ -1,6 +1,6 @@
 ---
 title: "Home page"
-description: "Optional for SEO and page summary. Use for descripton meta tag."
+description: "Optional for SEO and page summary."
 layout: "base.njk"
 ---
 
