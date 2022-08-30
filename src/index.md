@@ -4,4 +4,4 @@ description: "Optional for SEO and page summary."
 layout: "base.njk"
 ---
 
-This is the home page.
+This is the home page by the {{ meta.authorName }}.
