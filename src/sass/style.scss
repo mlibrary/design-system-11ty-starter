@@ -1,10 +1,4 @@
 @use 'reset';
-
-html {
-  color:rebeccapurple;
-  background-color: #eee;
-  font-size: 28px;
-  margin: 0;
-  padding: 0;
-}
+@use 'base';
+@use 'site-footer';
 

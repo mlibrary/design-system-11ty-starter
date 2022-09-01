@@ -2,6 +2,8 @@
 
 > Maintained by the [U-M Library Design System Team](https://design-system.lib.umich.edu/)
 
+This starter is built with some basic navigation and page structure. If you are using 11ty for a headless CMS, consider removing the structure or using the headless version of this template (coming soon!).
+
 ## Quick Start
 
 - Clone the repo
