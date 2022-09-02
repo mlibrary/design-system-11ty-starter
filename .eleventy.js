@@ -14,7 +14,6 @@ module.exports = function(eleventyConfig) {
   // Eleventy passes through our compiled CSS to the public directory. 
   eleventyConfig.addPassthroughCopy("./src/css");
   eleventyConfig.addPassthroughCopy("./src/img");
-  eleventyConfig.addPassthroughCopy("./src/favicon.png");
 
   return {
     passthroughFileCopy: true,
