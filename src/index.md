@@ -1,15 +1,16 @@
 ---
-title: "Home page"
-description: "Optional for SEO and page summary."
-layout: "base.njk"
+title: Home page
+description: Optional for SEO and page summary.
+layout: home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
 ---
 
-This is the home page by the {{ meta.authorName }}.
+## {{ title }}
 
-<nav aria-label="Primary Navigation">
-<ul>
-{% for page in collections.pages %}
-<li><a href="{{ page.url }}"> {{ page.data.title }} </a></li>
-{% endfor %}
-</ul>
-</nav>
+This is the home page by the {{ meta.author.name }}.
+
+Notice anything weird? Have feedback?
+
+Please contact <a href="mailto:{{ meta.author.email | url }}">{{ meta.author.email }}</a>
