@@ -2,7 +2,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
 
-  // Add the plugin
+  // Add the plugins used
   eleventyConfig.addPlugin(pluginNavigation);
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);

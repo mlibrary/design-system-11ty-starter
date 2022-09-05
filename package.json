@@ -6,8 +6,8 @@
   "scripts": {
     "watch:sass": "sass --no-source-map --watch src/sass:src/css",
     "build:sass": "sass src/sass:public/css",
-    "watch:eleventy": "eleventy --serve",
-    "build:eleventy": "eleventy",
+    "watch:eleventy": "npx eleventy --serve",
+    "build:eleventy": "npx eleventy",
     "start": "npm-run-all --parallel watch:eleventy watch:sass",
     "build": "npm-run-all build:*"
   },
