@@ -19,17 +19,6 @@
       <m-website-header name="11ty Starter">
         <a href="/">Log in</a>
       </m-website-header>
-      <nav aria-label="Primary Navigation">
-        <ul>
-          {% for page in collections.pages %}
-            <li>
-              <a href="{{ page.url }}">
-                {{ page.data.title }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </nav>
     </div>
     <main class="viewport-container">
       {{ content | safe }}

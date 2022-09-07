@@ -1,9 +1,4 @@
----
-layout: base.njk
----
-
-<main>
-  <nav aria-label="Primary Navigation">
+<nav aria-label="Primary Navigation">
         <ul>
           {% for page in collections.pages %}
             <li>
@@ -13,6 +8,4 @@ layout: base.njk
             </li>
           {% endfor %}
         </ul>
-  </nav>
-  {{ content | safe }}
-</main>
+      </nav>
