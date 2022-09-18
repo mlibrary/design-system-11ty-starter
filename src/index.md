@@ -3,11 +3,10 @@ title: Home page
 description: Optional for SEO and page summary.
 layout: home.njk
 eleventyNavigation:
-  key: Home
-  order: 1
+  key: home
 ---
 
-## {{ title }}
+# {{ title }}
 
 This is the home page by the {{ meta.author.name }}.
 

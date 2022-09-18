@@ -1,18 +1,6 @@
 ---
 layout: base.njk
 ---
+  {% include "partials/primary-nav.njk" %}
 
-<main>
-  <nav aria-label="Primary Navigation">
-        <ul>
-          {% for page in collections.pages %}
-            <li>
-              <a href="{{ page.url }}">
-                {{ page.data.title }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-  </nav>
   {{ content | safe }}
-</main>

@@ -1,13 +1,13 @@
 ---
-title: Test page 1
+title: About
 description: Optional for SEO and page summary.
 layout: page.njk
 eleventyNavigation:
-  key: page-1
+  key: about
   parent: home
-  order: 1
+  order: 3
 ---
 
 # {{ title }}
 
-Stub page for Test Page 1 information.
+Stub page for About information.
