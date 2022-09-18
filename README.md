@@ -2,14 +2,22 @@
 
 > Maintained by the [U-M Library Design System Team](https://design-system.lib.umich.edu/)
 
-This starter is built with some basic navigation and page structure. 
+This is meant to be a light starter and it is built with some basic navigation and page structure. 
 
-If you are using 11ty for a headless CMS, consider removing the structure or using the headless version of this template (coming soon?).
+It contains the following U-M Library Design System web components
+- Universal Header
+- Website Header
+
+As well as the
+- Design System CSS package
+
+If you are using 11ty for a headless CMS, consider removing the structure and creating the headless version of this template.
 
 ## Development Quick Start
 
 - Clone the repo
 - Run `npm install` to install 11ty and all of the dependencies.
+- Run `npm run start` 
 - Go to `http://localhost:8080`
 
 ## Dev Scripts
@@ -29,6 +37,15 @@ Edit your site metadata (site name, author, contact, url, etc..)
 src/_data/meta.json
 ```
 
+### Layouts
+
+Page layouts are located the the `layouts` folder
+```
+src/_includes/layouts
+```
+There is a `base.njk` file for the HTML boilerplate.
+Additional layouts build off of that boilerplate.
+
 ### Create pages/ page content
 ```
 src/pages
@@ -41,6 +58,9 @@ Edit the styles in the `src/sass` folder. 11ty is watching that folder and build
 Add images to the `src/img` folder. 11ty is watching that folder and passing through the files to the `public` folder.
 
 ---
+
+## Accessibility
+This starter has been tested with ARC Toolkit, WAVE, and keyboard.
 
 ## Resources
 
