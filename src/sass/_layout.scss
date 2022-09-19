@@ -1,0 +1,11 @@
+.layout {
+  margin: 2rem auto;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 14rem auto;
+  grid-gap: 2.5rem;
+  padding-top: 2rem;
+  justify-items: start;
+}

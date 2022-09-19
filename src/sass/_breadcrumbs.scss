@@ -1,3 +1,7 @@
+.breadcrumbs li {
+  text-transform: capitalize;
+}
+
 .breadcrumbs li:not(:first-child):before {
   content: '\203A' !important;
   font-size: 1rem;

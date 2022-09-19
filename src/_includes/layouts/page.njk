@@ -3,6 +3,11 @@ layout: base.njk
 ---
 
 {% include "partials/breadcrumbs.njk" %}
-{% include "partials/side-nav.njk" %}
-
-{{ content | safe }}
+<div class="grid-layout">
+  <aside class="aside">
+  {% include "partials/side-nav.njk" %}
+  </aside>
+  <div class="main-content">
+  {{ content | safe }}
+</div>
+</div>

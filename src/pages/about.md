@@ -10,4 +10,10 @@ eleventyNavigation:
 
 # {{ title }}
 
-Stub page for About information.
+This is a good place to talk about your site. I want a much longer block of text here to see how it wraps.
+
+## Here's a heading level two
+
+```
+code sample
+```
