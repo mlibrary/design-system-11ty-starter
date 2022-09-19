@@ -16,8 +16,6 @@
 .footer ul a {
   display: inline-block;
   padding: var(--space-x-small) 0;
-  text-decoration: none;
-  text-decoration-thickness: 0px;
 }
 
 .footer ul a span:hover {
@@ -39,6 +37,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 350px);
   gap: var(--space-xx-large);
+}
+
+.footer__content .first-column ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
 }
 
 .footer__content h2 {
