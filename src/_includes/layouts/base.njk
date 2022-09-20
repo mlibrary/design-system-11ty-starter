@@ -7,7 +7,7 @@
     <title>
       {{ title }} | {{ meta.siteName }}
     </title>
-    <link rel="icon" href="{{ '/img/favicon.png' | url }}"/>
+    <link rel="icon" href="{{ '/img/favicon.ico' | url }}"/>
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
     <link href="https://unpkg.com/@umich-lib/web@1/umich-lib.css" rel="stylesheet"/>
     <script type="module" src="https://unpkg.com/@umich-lib/web@1/dist/umich-lib/umich-lib.esm.js"></script>
@@ -24,7 +24,7 @@
     </section>
     <div class="headers">
       <m-universal-header></m-universal-header>
-      <m-website-header name="11ty Starter">
+      <m-website-header name=" {{ meta.siteName }}">
         <a href="/">Log in</a>
       </m-website-header>
     </div>
