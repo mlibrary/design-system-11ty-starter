@@ -9,11 +9,9 @@ It contains the following U-M Library Design System web components
 - Universal Header
 - Website Header
 
-As well as the
+As well as the:
 
 - Design System CSS package
-
-If you are using 11ty for a headless CMS, consider removing the structure and creating the headless version of this template.
 
 ## Development Quick Start
 
@@ -54,7 +52,7 @@ http://localhost:8080
 
 ## Building Your Site
 
-This is some very basic information. Pleaser read the official [11ty documentation](https://www.11ty.dev/docs/) for an in-depth guide to building with 11ty.
+This is some very basic information. Please read the official [11ty documentation](https://www.11ty.dev/docs/) for an in-depth guide to building with 11ty.
 
 ### Edit site metadata
 
