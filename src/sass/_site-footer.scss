@@ -70,12 +70,15 @@
   color: var(--color-blue-200);
   padding: var(--space-medium) 0;
 }
+
 .footer__disclaimer a {
   color: var(--color-blue-200);
 }
+
 .footer__disclaimer p {
   margin: 0;
 }
+
 @media screen and (min-width: 820px) {
   .footer__disclaimer p {
     display: inline-block;
