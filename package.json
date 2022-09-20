@@ -5,10 +5,10 @@
   "main": "index.html",
   "scripts": {
     "watch:sass": "sass --no-source-map --watch src/sass:src/css",
-    "build:sass": "sass src/sass:public/css",
+    "build:sass": "sass --no-source-map src/sass:public/css",
     "watch:eleventy": "npx eleventy --serve",
     "build:eleventy": "npx eleventy",
-    "start": "npm-run-all --parallel watch:eleventy watch:sass",
+    "start": "npm-run-all build:sass --parallel watch:eleventy watch:sass ",
     "build": "npm-run-all build:*"
   },
   "repository": {
