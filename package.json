@@ -4,8 +4,8 @@
   "description": "Starter template for creating an 11ty (eleventy) project with the U-M Library Design System",
   "main": "index.html",
   "scripts": {
-    "watch:sass": "sass --no-source-map --watch src/sass:src/css",
-    "build:sass": "sass --no-source-map src/sass:public/css",
+    "watch:sass": "sass --no-source-map --watch src/scss:src/css",
+    "build:sass": "sass --no-source-map src/scss:public/css",
     "watch:eleventy": "npx eleventy --serve",
     "build:eleventy": "npx eleventy",
     "start": "npm-run-all build:sass --parallel watch:eleventy watch:sass ",

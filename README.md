@@ -27,7 +27,7 @@ Install 11ty and dependencies
 npm install
 ```
 
-Start development server and watch Sass files
+Start development server and watch Sass (.scss) files
 
 ```
 npm start
@@ -41,7 +41,7 @@ http://localhost:8080
 
 ## Dev Scripts
 
-- `npm start` to start the eleventy server (serves the `/public` folder) and watch the Sass folder
+- `npm start` to start the eleventy server (serves the `/public` folder) and watch the Sass `/scss` folder
 - `npm build` to create a production build. Outputs into `/public`.
 
 ### Building and watching files
@@ -86,7 +86,7 @@ Create your content in a markdown file. Use YAML front matter to add data to you
 
 ### Styles
 
-Edit the styles in the `src/sass` folder. 11ty is watching that folder and building the Sass files into `src/css`. 11ty then passes through the CSS to the `public` folder.
+Edit the styles in the `src/scss` folder. 11ty is watching that folder and building the Sass files into `src/css`. 11ty then passes through the CSS to the `public` folder.
 
 ### Images
 
