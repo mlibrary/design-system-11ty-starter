@@ -8,7 +8,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // The addWatchTarget config method allows you to manually add a file for Eleventy to watch.
-  eleventyConfig.addWatchTarget("./src/sass");
+  eleventyConfig.addWatchTarget("./src/scss");
 
   // The Pass Through feature tells Eleventy to copy things to our output folder
   // Eleventy passes through our compiled CSS to the public directory. 
