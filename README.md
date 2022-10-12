@@ -2,7 +2,7 @@
 
 > Maintained by the [U-M Library Design System Team](https://design-system.lib.umich.edu/)
 
-This is meant to be a light starter and it is built with some basic navigation and page structure.
+This is a minimal starter. There is some page structure and navigation built in but add what you need.
 
 It contains the following U-M Library Design System web components
 
@@ -14,9 +14,17 @@ As well as the:
 - Design System CSS package
 
 ## Development Quick Start
+There are two ways to start developing: 
+1. Use the template, or 
+2. Clone the repo
 
-Clone the repo
 
+*Use the template*
+
+This repository is set up as a template so you may quickly generate a repository with the existing directory structure, branches, and files. Activate the "Use this template" button on this page to begin.
+
+
+*Clone the repo*
 ```
 git clone https://github.com/mlibrary/design-system-11ty-starter.git
 ```
@@ -27,7 +35,7 @@ Install 11ty and dependencies
 npm install
 ```
 
-Start development server and watch Sass (.scss) files
+Start the 11ty development server and watch Sass (.scss) files
 
 ```
 npm start
@@ -39,7 +47,7 @@ View in browser
 http://localhost:8080
 ```
 
-## Dev Scripts
+## Dev Scripts to Know
 
 - `npm start` to start the eleventy server (serves the `/public` folder) and watch the Sass `/scss` folder
 - `npm build` to create a production build. Outputs into `/public`.
@@ -56,7 +64,7 @@ This is some very basic information. Please read the official [11ty documentatio
 
 ### Edit site metadata
 
-Edit your site metadata (site name, author, contact, url, etc..)
+Edit your site metadata (site name, author, contact, url, etc..). This information is used throughout the site and for your site's SEO.
 
 ```
 src/_data/meta.json
@@ -91,6 +99,8 @@ Edit the styles in the `src/scss` folder. 11ty is watching that folder and build
 ### Images
 
 Add images to the `src/img` folder. 11ty is watching that folder and passing through the files to the `public` folder.
+
+Included is a template image called `social-card.png`. Replace that image with one of your own (1200px x 630px) to use as the social card linked for your SEO. This image will then show up when your site is shared on Facebook, Twitter, LinkedIn, etc...
 
 ### 11ty Features
 
