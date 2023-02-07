@@ -1,3 +1,5 @@
+@use 'media';
+
 // --------------------------------------------------
 //
 // # Breadcrumbs
@@ -5,27 +7,48 @@
 //
 // --------------------------------------------------
 
+.breadcrumbs {
+  padding-top: 2rem;
+}
+
 .breadcrumbs ol {
   display: flex;
+  flex-flow: row wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.breadcrumbs li:first-child a {
+.breadcrumbs li a:first-child::first-letter  {
+  text-transform: capitalize;
+}
+
+.banner-text .breadcrumbs {
+  @include media.breakpoint('sm', 'max-width') {
+      display: none;
+    }
+}
+
+.breadcrumbs li:first-child {
   padding-left: 0;
+
+  @include media.breakpoint('sm', 'max-width') {
+      display: none;
+    }
+}
+
+.breadcrumbs li:first-child a {
+  padding-left: 0 !important;
 }
 
 .breadcrumbs a {
   display: inline;
-  padding: var(--space-medium) var(--space-small);
+  padding: 0 var(--space-x-small) !important;
 }
 
 .breadcrumbs li {
-  font-size: 0;
-}
-
-.breadcrumbs a {
+  display: inline-flex;
+  align-items: center;
   font-size: 1rem;
 }
 
@@ -40,21 +63,21 @@
 }
 
 .breadcrumbs li:not(:first-child):before {
-  content: '\2215';
+  font-family: "Material Icons";
+  content: '\e5cc' !important;
+  color: var(--color-teal-400);
+  padding-left: .25rem;
   font-size: 1rem;
 }
 
-.breadcrumbs li {
-  text-transform: capitalize;
-}
-
-.breadcrumbs li:not(:first-child):before {
-  content: '\203A' !important;
-  font-size: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  .breadcrumbs li:not(:last-child) {
-  display: none;
+@include media.breakpoint('sm', 'max-width')  {
+  .breadcrumbs li:not(li:nth-last-child(2)) {
+      display: none;
+   }
+ 
+  .breadcrumbs li:nth-last-child(2):before {
+    font-family: "Material Icons";
+    content: '\e5cb' !important;
+    font-size: 1rem;
   }
-}
+ }
