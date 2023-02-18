@@ -9,7 +9,3 @@ eleventyNavigation:
 This is page content written in `index.md`. 
 
 *Important*: Make sure there is an H1 on this page if you don't use the banner.
-
-Notice anything weird? Have feedback?
-
-Please contact <a href="mailto:{{ meta.author.email | url }}">{{ meta.author.email }}</a>

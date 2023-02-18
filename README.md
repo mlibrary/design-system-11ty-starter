@@ -56,7 +56,7 @@ There are four layouts:
 - `base.njk`
 - `home.njk`
 - `page.njk`
-- `404.njk`
+- `static.njk` (used for 404 page)
 
 The starter also contains the following U-M Library Design System web components
 
@@ -78,7 +78,10 @@ The following is included in the `base.njk` `<head>` and is required for the web
 ```
 
 There are also partials components, including:
+- `banner-hero.njk`
+- `banner-feedback.njk`
 - `breadcrumbs.njk`
+- `cards.njk`
 - `primary-nav.njk`
 - `side-nav.njk`
 

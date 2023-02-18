@@ -4,7 +4,7 @@ layout: base.njk
 
 <div class="flex-layout">
   <div class="main-content">
-   {% include "partials/banner.njk" %}
+   {% include "partials/banner-hero.njk" %}
     <div class="viewport-container">
        {{ content | safe }}
     </div>
@@ -13,3 +13,4 @@ layout: base.njk
     </div>
   </div>
 </div>
+{% include "partials/banner-feedback.njk" %}
