@@ -6,9 +6,9 @@ eleventyNavigation:
   key: home
 ---
 
-# {{ title }}
+This is page content written in `index.md`. 
 
-This is the home page by the {{ meta.author.name }}.
+*Important*: Make sure there is an H1 on this page if you don't use the banner.
 
 Notice anything weird? Have feedback?
 
