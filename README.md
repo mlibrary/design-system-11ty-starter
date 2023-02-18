@@ -2,16 +2,7 @@
 
 > Maintained by the [U-M Library Design System Team](https://design-system.lib.umich.edu/)
 
-This is a minimal starter. There is some page structure and navigation built in but add what you need.
-
-It contains the following U-M Library Design System web components
-
-- Universal Header
-- Website Header
-
-As well as the:
-
-- Design System CSS package
+This is a minimal starter. There is basic page structure and navigation built in but add what you need.
 
 ## Development Quick Start
 There are two ways to start developing: 
@@ -23,6 +14,7 @@ There are two ways to start developing:
 
 This repository is set up as a template so you may quickly generate a repository with the existing directory structure, branches, and files. Activate the "Use this template" button on this page to begin.
 
+OR
 
 *Clone the repo*
 ```
@@ -55,6 +47,40 @@ http://localhost:8080
 ### Building and watching files
 
 `npm-run-all` is a CLI tool to run multiple npm-scripts in parallel or sequential. This is used in the dev scripts to watch Sass files and hot reload 11ty files in parallel.
+
+---
+
+## What's Included
+
+There are four layouts:
+- `base.njk`
+- `home.njk`
+- `page.njk`
+- `404.njk`
+
+The starter also contains the following U-M Library Design System web components
+
+- Universal Header
+- Website Header
+
+As well as the:
+
+- Design System CSS package
+- Material Design font family (for using Material Icons)
+
+The following is included in the `base.njk` `<head>` and is required for the web components, CSS package, and icons:
+
+```
+<link href="https://cdn.jsdelivr.net/npm/@umich-lib/web@1.3.0/umich-lib.css" rel="stylesheet"/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@umich-lib/web@1.3.0/dist/umich-lib/umich-lib.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@umich-lib/components@1.1.0/dist/umich-lib/umich-lib.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+
+There are also partials components, including:
+- `breadcrumbs.njk`
+- `primary-nav.njk`
+- `side-nav.njk`
 
 ---
 
